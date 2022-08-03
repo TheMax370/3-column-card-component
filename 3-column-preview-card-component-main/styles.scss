@@ -1,0 +1,129 @@
+//Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+// variables
+$bg_color: #F2F2F2;
+$first-color: #E28625;
+$second-color: #006971;
+$third-color: #004140;
+$h-font: 'Big Shoulders Display', cursive;
+$p-font: 'Lexend Deca', sans-serif;
+
+//mixins 
+@mixin flx {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+@mixin marg {
+    margin-left: 15%;
+}
+
+//
+
+body {
+    margin: 0;
+    background-color: $bg_color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.item-1 {
+    @include flx;
+    background-color: $first-color;
+    width: 307px;
+    height: 500px;
+    border-radius: 8px;
+    
+    button {
+        color: $first-color;
+    }
+}
+
+.item-2 {
+    @include flx;
+    background-color: $second-color;
+    width: 307px;
+    height: 500px;
+    border-radius: 8px;
+    
+    button {
+        color: $second-color;
+    }
+}
+
+.item-3 {
+    @include flx;
+    background-color: $third-color;
+    width: 307px;
+    height: 500px;
+    border-radius: 8px;
+    
+    button {
+        color: $third-color;
+    }
+}
+
+main {
+    max-width: 920px;
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+        div {
+            img {
+                width: 64px;
+                height: 40px;
+                @include marg;
+                margin-top: 5%;
+            }
+            
+            h1 {
+                font-family: $h-font;
+                font-size: 40px;
+                color: white;
+                @include marg;
+                margin-top: 0;
+            }
+            
+            p {
+                font-family: $p-font;
+                font-size: 15px;
+                line-height: 25px;
+                color: white;
+                @include marg;
+                margin-top: 0;
+                width: 212px;
+                height: 125px;
+            }
+            
+            button {
+                background-color: #F2F2F2;
+                border-radius: 25px;
+                font-family: $p-font;
+                border: none;
+                width: 146px;
+                height: 48px;
+                @include marg;
+                
+                &:hover {
+                    color: white;
+                    background-color: transparent;
+                    border: 2px solid #FFFFFF;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
