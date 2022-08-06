@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+body {
+  margin: 0;
+  background-color: #F2F2F2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.item-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #E28625;
+  width: 307px;
+  height: 500px;
+  border-radius: 8px;
+}
+.item-1 button {
+  color: #E28625;
+}
+
+.item-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #006971;
+  width: 307px;
+  height: 500px;
+  border-radius: 8px;
+}
+.item-2 button {
+  color: #006971;
+}
+
+.item-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #004140;
+  width: 307px;
+  height: 500px;
+  border-radius: 8px;
+}
+.item-3 button {
+  color: #004140;
+}
+
+main {
+  max-width: 920px;
+}
+main .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+main .grid-container div img {
+  width: 64px;
+  height: 40px;
+  margin-left: 15%;
+  margin-top: 5%;
+}
+main .grid-container div h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 40px;
+  color: white;
+  margin-left: 15%;
+  margin-top: 0;
+}
+main .grid-container div p {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  color: white;
+  margin-left: 15%;
+  margin-top: 0;
+  width: 212px;
+  height: 125px;
+}
+main .grid-container div button {
+  background-color: #F2F2F2;
+  border-radius: 25px;
+  font-family: "Lexend Deca", sans-serif;
+  border: none;
+  width: 146px;
+  height: 48px;
+  margin-left: 15%;
+}
+main .grid-container div button:hover {
+  color: white;
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=styles.css.map */
