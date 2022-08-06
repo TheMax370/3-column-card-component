@@ -93,7 +93,7 @@ main .grid-container div button:hover {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 320px) and (max-width: 900px) {
   .grid-container {
     display: flex;
     flex-direction: column;
