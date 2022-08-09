@@ -94,8 +94,24 @@ main .grid-container div button:hover {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 900px) {
+  main {
+    max-width: 327px;
+  }
   main .grid-container {
     display: flex;
     flex-direction: column;
+    height: 100vh;
+  }
+  .item-1 {
+    max-width: 327px;
+    max-height: 442px;
+  }
+  .item-2 {
+    max-width: 327px;
+    max-height: 442px;
+  }
+  .item-3 {
+    max-width: 327px;
+    max-height: 442px;
   }
 }/*# sourceMappingURL=styles.css.map */
